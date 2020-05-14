@@ -1,0 +1,194 @@
+﻿<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRIYA DECORS-Home</TITLE>
+<style>
+.header {
+  background-image: url("https://i.pinimg.com/originals/59/53/89/5953893dfa79bc3e385015d1d30a6071.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height:50%;
+   width: 100%;
+  padding:5px;
+  text-align: center;
+}
+
+body  {
+  background-image: url("https://i.pinimg.com/originals/59/53/89/5953893dfa79bc3e385015d1d30a6071.jpg");
+ 
+  height=100%;
+  width=100%
+  background-position: center;
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+    margin: 0;
+  }
+.topnav {
+  overflow: hidden;
+  background-color:9A0A35;
+  width:100%
+}
+
+.topnav a {
+  
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 50.2px;
+  text-decoration: none;
+  float:left;
+}
+
+.topnav a:hover {
+  background-color:#FFCFDE;
+  color: black;
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+.footer {
+  background-color:#333;
+  padding: 10px;
+  text-align: left;
+  color:black;
+  background-image: url("https://i.pinimg.com/originals/59/53/89/5953893dfa79bc3e385015d1d30a6071.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height:40%;
+  width: 100%;
+}
+.margin
+{
+margin:0px 50px;
+}
+  
+</style>
+</head>
+<body>
+<div class="header">
+<div class="margin">
+<img src="C:\Users\DELL\Desktop\html\unnamed1.png"  width="230" height="230" style="float:left">
+</div>
+</div>
+
+<div class="topnav">
+  <a href="file:///C:/Users/DELL/Desktop/html/html.html">Home</a>
+  <a href="file:///C:/Users/DELL/Desktop/html/myp.html">My Profile</a>
+  <a href="file:///C:/Users/DELL/Desktop/html/ser.html">Service</a>
+  <a href="file:///C:/Users/DELL/Desktop/html/gall.html">Gallery</a>
+  <a href="file:///C:/Users/DELL/Desktop/html/enq.html">Enquiry</a>
+  <a href="file:///C:/Users/DELL/Desktop/html/cont.html">Contact</a>
+  <a href="file:///C:/Users/DELL/Desktop/html/fdbk.html">Feedback</a>
+  
+</div>  
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+
+  <img src="D:\b57aacb7-cba1-4e32-9752-3279e5ef11b2.JPG" style="width:100%">
+   
+  
+</div>
+
+<div class="mySlides fade">
+
+  <img src="D:\TSW_4900 (1).jpg" style="width:100%">
+   
+ 
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="D:\DSC_0138.JPG" style="width:100%">
+ 
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>    
+</div>
+<div class="footer">
+  <p>Contact Us</p>
+  <p>160/A,Srinagar,Poondurai road</p>
+  <p>Erode-638002</p>
+  <p>Mail id:pgraj.erode@gmail.com</p>
+  <p>Phone no:9842781003</p>
+  
+</div>
+</body>
+</html>
